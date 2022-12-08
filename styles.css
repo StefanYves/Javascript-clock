@@ -1,0 +1,16 @@
+.center-elements {
+  margin: auto;
+  width: 20%;
+  padding: 10px;
+  margin-top: 200px;
+}
+
+.p-propreties {
+  font-size: 100px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.body {
+  background-color: black;
+}
