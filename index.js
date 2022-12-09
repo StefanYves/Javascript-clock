@@ -12,11 +12,27 @@ function showTime() {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
-  var text = h + ":" + m + ":" + s;
-  document.getElementById("MyClock").innerText = text;
-  document.getElementById("MyClock").textContent = text;
+  var clock = h + ":" + m + ":" + s;
+  document.getElementById("MyClock").innerText = clock;
+  document.getElementById("MyClock").textContent = clock;
 
   setTimeout(showTime, 1000);
 }
 
+function showDate() {
+  var date = new Date();
+  var day = date.getDate();
+  var month = date.getMonth();
+  var year = date.getFullYear();
+
+  month = month + 1;
+
+  var text = day + "." + month + "." + year;
+  document.getElementById("MyDate").innerText = text;
+  document.getElementById("MyDate").textContent = text;
+
+  setTimeout(showDate, 1000);
+}
+
 showTime();
+showDate();
